@@ -1,0 +1,198 @@
+@import 'config';
+@import 'utilities';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	// font-family: sans-serif;
+	font-family: 'Anek Telugu', sans-serif;
+}
+
+p {
+	font-size: 1.25rem;
+	// text-align: justify;
+}
+
+input {
+	padding: 0.75rem;
+	width: 100%;
+	border-radius: 5px;
+	outline: 0;
+	border-color: $primary-color;
+}
+
+@media screen and (min-width: 992px) {
+	main {
+		padding: 0 !important;
+	}
+}
+
+main {
+	padding: 1rem;
+}
+
+.sidebar {
+	flex: 1;
+	padding: 1rem 0;
+}
+
+.main {
+	flex: 3;
+	padding: 1rem 0;
+}
+
+img {
+	width: 100%;
+}
+h5 {
+	font-size: 1.25rem;
+}
+
+/* Navbar */
+.navbar {
+	padding: 1rem;
+	background-color: $primary-color;
+	color: $light-color;
+
+	.container {
+		display: flex;
+		flex-wrap: inherit;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-brand {
+		font-weight: bold;
+		text-decoration: none;
+		color: $light-color;
+	}
+
+	&-menu {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		list-style-type: none;
+
+		li {
+			margin-left: 1rem;
+		}
+
+		a {
+			// color: #000;
+			color: $light-color;
+			text-decoration: none;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: yellow;
+			}
+		}
+	}
+}
+
+// Cards
+.card {
+	@extend .splite;
+	flex-direction: column;
+	margin-bottom: 1rem;
+	border: 1px solid #95a5a6;
+	border-radius: 5px;
+
+	&-image {
+		// flex: 1;
+		position: relative;
+		display: block;
+		min-width: 100%;
+		min-height: 250px;
+		object-fit: cover;
+		img {
+			object-fit: cover;
+		}
+	}
+
+	&-body {
+		flex: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 1rem 0.5rem;
+	}
+	&-title {
+		text-transform: capitalize !important;
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.card {
+		flex-direction: row;
+
+		&-image {
+			min-width: 300px;
+			min-height: 200px;
+		}
+	}
+}
+
+// Profile Card
+.profile-card {
+	border: 1px solid #95a5a6;
+	border-radius: 5px;
+	text-align: center;
+	padding: 1rem;
+
+	img {
+		border-radius: 50%;
+	}
+
+	h4 {
+		margin: 0;
+	}
+}
+
+// NewsletterCard
+.newsletter-card {
+	border: 1px solid #95a5a6;
+	border-radius: 5px;
+	padding: 1rem;
+	margin-top: 1rem;
+
+	h4 {
+		margin-top: 0;
+		text-align: center;
+	}
+
+	button {
+		display: block;
+		width: 100%;
+		margin-top: 0.7rem;
+	}
+}
+
+// Footer
+footer {
+	padding: 2rem;
+	display: grid;
+	place-content: center;
+	background-color: $primary-color;
+	color: $light-color;
+}
+
+// Post
+article {
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		margin-bottom: 1rem;
+	}
+}

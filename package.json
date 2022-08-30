@@ -1,0 +1,22 @@
+{
+  "name": "net-blogger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "(if exist .next rd /s /q .next 2>nul) && next dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
+    "contentful": "^9.1.34",
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "sass": "^1.54.5"
+  }
+}
