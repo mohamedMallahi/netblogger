@@ -12,15 +12,16 @@ const client = createClient({
 
 export default function Post({ post }) {
 	const router = useRouter();
-	const { title, thumbnail, body } = post.fields;
-	const { createdAt } = post.sys;
-	const articleComponent = documentToReactComponents(body);
-
-	console.log(post);
 
 	if (router.isFallback) {
 		return <h1>Loading...</h1>;
 	}
+
+	const { title, body } = post.fields;
+	const { createdAt } = post.sys;
+	const articleComponent = documentToReactComponents(body);
+
+	console.log(post);
 
 	return (
 		<div className='container'>
