@@ -1,3 +1,5 @@
+// Flex
+
 .splite {
 	display: flex;
 	flex-direction: column;
@@ -9,6 +11,8 @@
 		flex-direction: row;
 	}
 }
+
+// container
 
 .container {
 	width: 100%;
@@ -34,6 +38,8 @@
 	}
 }
 
+// buttons
+
 .btn {
 	padding: 0.75rem;
 	background-color: $primary-color;
@@ -46,11 +52,25 @@
 	display: inline-block;
 	transition: opacity 0.3s ease;
 
+	&.facebook {
+		background-color: #3b5998;
+	}
+
+	&.twitter {
+		background-color: #03a9f4;
+	}
+
+	&.youtube {
+		background-color: #f61c0d;
+	}
+
 	&:hover {
 		opacity: 0.8;
 		cursor: pointer;
 	}
 }
+
+// tables
 
 table.table {
 	border-collapse: collapse;
@@ -60,4 +80,22 @@ table.table {
 		border: 1px solid $primary-color;
 		padding: 0.5em;
 	}
+}
+
+// Misc
+.w-100 {
+	width: 100%;
+}
+
+.mb {
+	margin-bottom: 1rem;
+}
+
+// Tags
+.tag {
+	padding: 0.5rem;
+	background-color: $primary-color;
+	color: $light-color;
+	border-radius: 5px;
+	font-size: 0.7rem;
 }

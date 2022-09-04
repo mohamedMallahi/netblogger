@@ -1,15 +1,15 @@
 const NewsletterCard = () => {
 	return (
-		<div className='newsletter-card'>
+		<div className='widget-card'>
 			<h4>Subscribe To Our Newsletter</h4>
 			<form method='POST' action='/thankyou'>
 				<input
-					className='form-control'
+					className='w-100 mb'
 					type='email'
 					name='email'
 					placeholder='Email Address'
 				/>
-				<button className='btn'>Subscribe</button>
+				<button className='btn w-100'>Subscribe</button>
 			</form>
 		</div>
 	);

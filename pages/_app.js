@@ -10,7 +10,7 @@ function App({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<title>Reactor CMS</title>
+				<title>NetBlogger</title>
 				<meta
 					name='description'
 					content='Reactor CMS is a minimalist content management system'

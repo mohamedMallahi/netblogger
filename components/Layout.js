@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from './Navbar';
-import ProfileCard from './ProfileCard';
-import NewsletterCard from './NewsletterCard';
+import ProfileCard from './widgets/ProfileCard';
+import SocialMedia from './widgets/SocialMediaCard';
+import NewsletterCard from './widgets/NewsletterCard';
 
 const Layout = ({ children }) => {
 	return (
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
 				<div className='main'>{children}</div>
 				<aside className='sidebar'>
 					<ProfileCard />
+					<SocialMedia />
 					<NewsletterCard />
 				</aside>
 			</main>

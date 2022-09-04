@@ -1,6 +1,6 @@
 const ProfileCard = () => {
 	return (
-		<div className='profile-card'>
+		<div className='widget-card profile-card'>
 			<img
 				className='rounded-circle'
 				style={{ width: '100px', height: '100px', objectFit: 'cover' }}

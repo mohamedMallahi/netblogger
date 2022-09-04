@@ -43,6 +43,13 @@ export default function BlogCard({ post }) {
 					</button>
 				</div>
 			</div>
+			<div className='card-tags'>
+				{post.metadata.tags.map((tag) => (
+					<span key={tag.sys.id} className='tag'>
+						{tag.sys.id}
+					</span>
+				))}
+			</div>
 		</div>
 	);
 }
